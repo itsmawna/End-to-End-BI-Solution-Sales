@@ -1,0 +1,2016 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/7/2025 10:03:33 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-PE94ASE2"
+  DTS:CreatorName="LAPTOP-PE94ASE2\21276"
+  DTS:DTSID="{D8A3F18E-F0BA-459B-BB8C-0F0F484F6F59}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="14348"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{53B21818-150D-4DA9-8E7B-D6F049726D89}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cutomer]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9D196341-FE5A-4C00-82CC-668A9F7BBEB8}"
+      DTS:ObjectName="cutomer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="14348"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\21276\OneDrive\Bureau\data\customer_profile_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_id"
+              DTS:DTSID="{885252A0-C622-4070-9EB8-D2F1FBD746CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_name"
+              DTS:DTSID="{C49BADDA-BD78-453E-AB9D-DB9E4E785118}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_name"
+              DTS:DTSID="{DF485D4D-0436-443A-A1A2-297B186C2E9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{D866BC69-E9C4-48A8-AA99-FF9C7218BD4B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date_of_birth"
+              DTS:DTSID="{6F1D6ADF-F3BF-4734-BCE5-413C11C8BC32}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="29"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="email"
+              DTS:DTSID="{314F90C8-EF01-4CA4-AAF5-3862C939C56B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="phone_number"
+              DTS:DTSID="{EC8E8FEC-682A-4A76-9BA0-FBCF0B9C767C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signup_date"
+              DTS:DTSID="{6420C652-D316-4E94-8C9B-B0682AA4A93C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address"
+              DTS:DTSID="{1D7A19F0-E808-4CD0-A87A-7192E62835BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{77DD3CBC-7BDA-40CB-87F4-4B6E95BFF8E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{53730D56-EC04-4CD0-8E00-3BD6449309E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zip_code"
+              DTS:DTSID="{C736FBF2-8712-43B6-A6CF-1F84019FB163}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{D56A473B-92FB-4A75-A991-7152B421AEC0}"
+      DTS:ObjectName="LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-PE94ASE2\MSSQLSERVER01;Initial Catalog=projet_bidw;Integrated Security=True;Application Name=SSIS-Package-{D56A473B-92FB-4A75-A991-7152B421AEC0}LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{B01282BD-6B1D-4004-8D1A-E207A24824C1}"
+      DTS:ObjectName="LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-PE94ASE2\MSSQLSERVER01;Initial Catalog=projet_bidw;Integrated Security=True;Application Name=SSIS-Package-{B01282BD-6B1D-4004-8D1A-E207A24824C1}LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C4A540E9-915D-44BD-A82F-02C44639B79C}"
+      DTS:ObjectName="LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-PE94ASE2\MSSQLSERVER01;Initial Catalog=projet_bidw;Integrated Security=True;Application Name=SSIS-Package-{C4A540E9-915D-44BD-A82F-02C44639B79C}LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw 3;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[produit]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9242239A-10A4-45B3-8F44-3AB2034BFD7A}"
+      DTS:ObjectName="produit">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="14348"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\21276\OneDrive\Bureau\data\products_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id"
+              DTS:DTSID="{7324FF58-4746-4A53-951D-13AE7F52DE2E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_name"
+              DTS:DTSID="{2357F588-2919-4E95-B448-3A00D9B73F13}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="category"
+              DTS:DTSID="{BDCA3928-EE51-4F16-BBB6-722784953EBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price_per_unit"
+              DTS:DTSID="{BB6AAFAE-00FE-470C-8FD5-A120233BF6A0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="brand"
+              DTS:DTSID="{A9F2B9E0-65C6-4465-9E97-C48E300D1C80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="23"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_description"
+              DTS:DTSID="{0053C8E1-D267-49C3-A2B6-C2E6AF832D73}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[purchase]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BA96110A-1268-48F2-9ED9-230071CAC656}"
+      DTS:ObjectName="purchase">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="14348"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\21276\OneDrive\Bureau\data\purchase_history_dataset_updated.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="purchase_id"
+              DTS:DTSID="{19123743-99EF-4177-A194-540A4D812741}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_id"
+              DTS:DTSID="{707FB0EB-EB67-4A06-B226-713CB6436178}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id"
+              DTS:DTSID="{E04287BD-A739-4D1A-82D8-7DDD8FFDAC34}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="purchase_date"
+              DTS:DTSID="{895A00C9-C90A-4397-B1D3-D27B4736F83B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="quantity"
+              DTS:DTSID="{5F3A81CB-F309-4DB1-9867-1A346E1C3B33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="total_amount"
+              DTS:DTSID="{8CC9490B-442D-488A-8FFF-D8B66073703C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\extraction vers staging customer profile"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{DE866C67-5322-49AD-9380-CBF4D76A0C45}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="extraction vers staging customer profile"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\extraction vers staging customer profile\Destination table customer profile"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;2"
+              description="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC."
+              name="Destination table customer profile"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nom de la table de base de données de destination."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."CustomerProfile"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifiez le nombre de lignes par lot. La taille par défaut, 0, utilise la même taille que la mémoire tampon interne SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant qu'une commande n'expire. Une valeur égale à 0 indique un délai infini. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si l'interface SqlBulkCopy doit être utilisée pour améliorer les performances des opérations d'insertion en bloc. Cette interface n'est prise en charge que par certains fournisseurs."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\extraction vers staging customer profile\Destination table customer profile.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw]"
+                  description="Gestionnaire de connexions managées"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[customer_id]"
+                      cachedDataType="i2"
+                      cachedName="customer_id"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[customer_id]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[customer_id]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[first_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="first_name"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[first_name]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[first_name]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[last_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="last_name"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[last_name]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[last_name]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="gender"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[gender]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[date_of_birth]"
+                      cachedDataType="date"
+                      cachedName="date_of_birth"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[date_of_birth]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[date_of_birth]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="29"
+                      cachedName="email"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[email]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[email]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[phone_number]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="12"
+                      cachedName="phone_number"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[phone_number]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[phone_number]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[signup_date]"
+                      cachedDataType="date"
+                      cachedName="signup_date"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[signup_date]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[signup_date]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="address"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[address]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[address]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[city]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="12"
+                      cachedName="city"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[city]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[city]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[state]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="state"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[state]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[state]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].Columns[zip_code]"
+                      cachedDataType="i4"
+                      cachedName="zip_code"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[zip_code]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[zip_code]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[first_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="first_name" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[last_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="last_name" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="10"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[date_of_birth]"
+                      dataType="dbTimeStamp"
+                      name="date_of_birth" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[email]"
+                      dataType="wstr"
+                      length="100"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[phone_number]"
+                      dataType="wstr"
+                      length="15"
+                      name="phone_number" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[signup_date]"
+                      dataType="dbTimeStamp"
+                      name="signup_date" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[address]"
+                      dataType="wstr"
+                      length="255"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[city]"
+                      dataType="wstr"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[state]"
+                      dataType="wstr"
+                      length="50"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET].ExternalColumns[zip_code]"
+                      dataType="wstr"
+                      length="10"
+                      name="zip_code" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\extraction vers staging customer profile\Destination table customer profile.Outputs[Sortie d'erreur de destination ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination ADO NET"
+                  synchronousInputId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging customer profile\Destination table customer profile.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\Destination table customer profile.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging customer profile\Destination table customer profile.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\extraction vers staging customer profile\source csv customer profile"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="14348"
+              name="source csv customer profile"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\extraction vers staging customer profile\source csv customer profile.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[cutomer]"
+                  connectionManagerRefId="Package.ConnectionManagers[cutomer]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[customer_id]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[customer_id]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[customer_id]"
+                      name="customer_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[first_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[first_name]"
+                      length="7"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[first_name]"
+                      name="first_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[last_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[last_name]"
+                      length="9"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[last_name]"
+                      name="last_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[gender]"
+                      length="6"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[date_of_birth]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[date_of_birth]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[date_of_birth]"
+                      name="date_of_birth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[email]"
+                      length="29"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[email]"
+                      name="email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[phone_number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[phone_number]"
+                      length="12"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[phone_number]"
+                      name="phone_number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[signup_date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[signup_date]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[signup_date]"
+                      name="signup_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[address]"
+                      length="13"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[address]"
+                      name="address"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[city]"
+                      length="12"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[state]"
+                      length="2"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[state]"
+                      name="state"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[zip_code]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[zip_code]"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].Columns[zip_code]"
+                      name="zip_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[customer_id]"
+                      dataType="i2"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[first_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="first_name" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[last_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="last_name" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[date_of_birth]"
+                      dataType="date"
+                      name="date_of_birth" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="29"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[phone_number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="phone_number" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[signup_date]"
+                      dataType="date"
+                      name="signup_date" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="13"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat].ExternalColumns[zip_code]"
+                      dataType="i4"
+                      name="zip_code" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\extraction vers staging customer profile.Paths[Sortie de source de fichier plat]"
+              endId="Package\extraction vers staging customer profile\Destination table customer profile.Inputs[Entrée de destination ADO NET]"
+              name="Sortie de source de fichier plat"
+              startId="Package\extraction vers staging customer profile\source csv customer profile.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\extraction vers staging products"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{A4E6938B-FC55-4B33-AF41-A04174E8A70C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="extraction vers staging products"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\extraction vers staging products\Destination ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;2"
+              description="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC."
+              name="Destination ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nom de la table de base de données de destination."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."products_data"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifiez le nombre de lignes par lot. La taille par défaut, 0, utilise la même taille que la mémoire tampon interne SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant qu'une commande n'expire. Une valeur égale à 0 indique un délai infini. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si l'interface SqlBulkCopy doit être utilisée pour améliorer les performances des opérations d'insertion en bloc. Cette interface n'est prise en charge que par certains fournisseurs."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\extraction vers staging products\Destination ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw]"
+                  description="Gestionnaire de connexions managées"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[product_id]"
+                      cachedDataType="i2"
+                      cachedName="product_id"
+                      externalMetadataColumnId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_id]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_id]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[product_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="product_name"
+                      externalMetadataColumnId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_name]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_name]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[category]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="category"
+                      externalMetadataColumnId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[category]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[category]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[price_per_unit]"
+                      cachedDataType="r4"
+                      cachedName="price_per_unit"
+                      externalMetadataColumnId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[price_per_unit]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[price_per_unit]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[brand]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="brand"
+                      externalMetadataColumnId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[brand]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[brand]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[product_description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="23"
+                      cachedName="product_description"
+                      externalMetadataColumnId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_description]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_description]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_id]"
+                      dataType="i4"
+                      name="product_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="product_name" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[category]"
+                      dataType="wstr"
+                      length="100"
+                      name="category" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[price_per_unit]"
+                      dataType="r8"
+                      name="price_per_unit" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[brand]"
+                      dataType="wstr"
+                      length="100"
+                      name="brand" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_description]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="product_description" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\extraction vers staging products\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination ADO NET"
+                  synchronousInputId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging products\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging products\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\extraction vers staging products\Source du fichier plat"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="14348"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\extraction vers staging products\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[produit]"
+                  connectionManagerRefId="Package.ConnectionManagers[produit]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_id]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_id]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_id]"
+                      name="product_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_name]"
+                      length="7"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_name]"
+                      name="product_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[category]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[category]"
+                      length="6"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[category]"
+                      name="category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[price_per_unit]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[price_per_unit]"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[price_per_unit]"
+                      name="price_per_unit"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[brand]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[brand]"
+                      length="6"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[brand]"
+                      name="brand"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_description]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_description]"
+                      length="23"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_description]"
+                      name="product_description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_id]"
+                      dataType="i2"
+                      name="product_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="product_name" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[category]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="category" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[price_per_unit]"
+                      dataType="r4"
+                      name="price_per_unit" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[brand]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="brand" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="23"
+                      name="product_description" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\extraction vers staging products.Paths[Sortie de source de fichier plat]"
+              endId="Package\extraction vers staging products\Destination ADO NET.Inputs[Entrée de destination ADO NET]"
+              name="Sortie de source de fichier plat"
+              startId="Package\extraction vers staging products\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\extraction vers staging purchase"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{D48D6268-0A5C-4B7F-BD53-222E28842593}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="extraction vers staging purchase"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\extraction vers staging purchase\Destination ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;2"
+              description="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC."
+              name="Destination ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nom de la table de base de données de destination."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."purchase_history"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifiez le nombre de lignes par lot. La taille par défaut, 0, utilise la même taille que la mémoire tampon interne SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant qu'une commande n'expire. Une valeur égale à 0 indique un délai infini. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si l'interface SqlBulkCopy doit être utilisée pour améliorer les performances des opérations d'insertion en bloc. Cette interface n'est prise en charge que par certains fournisseurs."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\extraction vers staging purchase\Destination ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-PE94ASE2\MSSQLSERVER01.projet_bidw]"
+                  description="Gestionnaire de connexions managées"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[purchase_id]"
+                      cachedDataType="i8"
+                      cachedName="purchase_id"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[purchase_id]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[purchase_id]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[customer_id]"
+                      cachedDataType="i8"
+                      cachedName="customer_id"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[customer_id]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[customer_id]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[product_id]"
+                      cachedDataType="i8"
+                      cachedName="product_id"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_id]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_id]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[purchase_date]"
+                      cachedDataType="date"
+                      cachedName="purchase_date"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[purchase_date]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[purchase_date]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[quantity]"
+                      cachedDataType="i1"
+                      cachedName="quantity"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[quantity]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[quantity]" />
+                    <inputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[total_amount]"
+                      cachedDataType="r4"
+                      cachedName="total_amount"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[total_amount]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[total_amount]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[purchase_id]"
+                      dataType="i4"
+                      name="purchase_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[product_id]"
+                      dataType="i4"
+                      name="product_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[purchase_date]"
+                      dataType="dbTimeStamp"
+                      name="purchase_date" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[quantity]"
+                      dataType="r8"
+                      name="quantity" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[total_amount]"
+                      dataType="r8"
+                      name="total_amount" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\extraction vers staging purchase\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination ADO NET"
+                  synchronousInputId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging purchase\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging purchase\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\extraction vers staging purchase\Source du fichier plat"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="14348"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\extraction vers staging purchase\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[purchase]"
+                  connectionManagerRefId="Package.ConnectionManagers[purchase]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[purchase_id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[purchase_id]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[purchase_id]"
+                      name="purchase_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[customer_id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[customer_id]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[customer_id]"
+                      name="customer_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_id]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[product_id]"
+                      name="product_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[purchase_date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[purchase_date]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[purchase_date]"
+                      name="purchase_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[quantity]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[quantity]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[quantity]"
+                      name="quantity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[total_amount]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[total_amount]"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[total_amount]"
+                      name="total_amount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[purchase_id]"
+                      dataType="i8"
+                      name="purchase_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[customer_id]"
+                      dataType="i8"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[product_id]"
+                      dataType="i8"
+                      name="product_id" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[purchase_date]"
+                      dataType="date"
+                      name="purchase_date" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[quantity]"
+                      dataType="i1"
+                      name="quantity" />
+                    <externalMetadataColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[total_amount]"
+                      dataType="r4"
+                      name="total_amount" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\extraction vers staging purchase.Paths[Sortie de source de fichier plat]"
+              endId="Package\extraction vers staging purchase\Destination ADO NET.Inputs[Entrée de destination ADO NET]"
+              name="Sortie de source de fichier plat"
+              startId="Package\extraction vers staging purchase\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Contrainte]"
+      DTS:CreationName=""
+      DTS:DTSID="{9F818801-B543-4477-B1CD-6EE8884099E0}"
+      DTS:From="Package\extraction vers staging customer profile"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Contrainte"
+      DTS:To="Package\extraction vers staging products" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Contrainte 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{9E2FBC78-C6EF-43AF-8882-3665691D439A}"
+      DTS:From="Package\extraction vers staging products"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Contrainte 1"
+      DTS:To="Package\extraction vers staging purchase" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="8">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="266.666666666667,42.6666666666667"
+          Id="Package\extraction vers staging customer profile"
+          TopLeft="88.1249960605057,53.2999974584581" />
+        <NodeLayout
+          Size="230.666666666667,42.6666666666667"
+          Id="Package\extraction vers staging products"
+          TopLeft="55.6249975133688,141.799993429184" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Contrainte]"
+          TopLeft="221.458329393839,95.9666641251247">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-50.4999985471368,45.8333293040595"
+              Start="0,0"
+              End="-50.4999985471368,38.3333293040595">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.9166646520297" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.9166646520297"
+                    Point2="0,22.9166646520297"
+                    Point3="-4,22.9166646520297" />
+                  <mssgle:LineSegment
+                    End="-46.4999985471368,22.9166646520297" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-46.4999985471368,22.9166646520297"
+                    Point2="-50.4999985471368,22.9166646520297"
+                    Point3="-50.4999985471368,26.9166646520297" />
+                  <mssgle:LineSegment
+                    End="-50.4999985471368,38.3333293040595" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="232,42.6666666666667"
+          Id="Package\extraction vers staging purchase"
+          TopLeft="136.874993881211,263.899987416268" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Contrainte 1]"
+          TopLeft="170.958330846702,184.466660095851">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.9166630345088,79.433327320417"
+              Start="0,0"
+              End="81.9166630345088,71.933327320417">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.7166636602085" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.7166636602085"
+                    Point2="0,39.7166636602085"
+                    Point3="4,39.7166636602085" />
+                  <mssgle:LineSegment
+                    End="77.9166630345088,39.7166636602085" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.9166630345088,39.7166636602085"
+                    Point2="81.9166630345088,39.7166636602085"
+                    Point3="81.9166630345088,43.7166636602085" />
+                  <mssgle:LineSegment
+                    End="81.9166630345088,71.933327320417" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\extraction vers staging customer profile">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="208,42.6666666666667"
+          Id="Package\extraction vers staging customer profile\source csv customer profile"
+          TopLeft="58.1249974016101,97.4999953508379" />
+        <NodeLayout
+          Size="238.666666666667,42.6666666666667"
+          Id="Package\extraction vers staging customer profile\Destination table customer profile"
+          TopLeft="239.374989299104,224.899989275933" />
+        <EdgeLayout
+          Id="Package\extraction vers staging customer profile.Paths[Sortie de source de fichier plat]"
+          TopLeft="162.12499740161,140.166662017505">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="196.583325230827,84.7333272584281"
+              Start="0,0"
+              End="196.583325230827,77.2333272584281">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.366663629214" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.366663629214"
+                    Point2="0,42.366663629214"
+                    Point3="4,42.366663629214" />
+                  <mssgle:LineSegment
+                    End="192.583325230827,42.366663629214" />
+                  <mssgle:CubicBezierSegment
+                    Point1="192.583325230827,42.366663629214"
+                    Point2="196.583325230827,42.366663629214"
+                    Point3="196.583325230827,46.366663629214" />
+                  <mssgle:LineSegment
+                    End="196.583325230827,77.2333272584281" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\extraction vers staging customer profile\Destination table customer profile">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\extraction vers staging products">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\extraction vers staging products\Source du fichier plat"
+          TopLeft="172.999994844198,132.999996036291" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\extraction vers staging products\Destination ADO NET"
+          TopLeft="413.999987661839,316.999990552664" />
+        <EdgeLayout
+          Id="Package\extraction vers staging products.Paths[Sortie de source de fichier plat]"
+          TopLeft="262.999994844198,175.666662702958">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="240.999992817641,141.333327849706"
+              Start="0,0"
+              End="240.999992817641,133.833327849706">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.6666639248531" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66.6666639248531"
+                    Point2="0,70.6666639248531"
+                    Point3="4,70.6666639248531" />
+                  <mssgle:LineSegment
+                    End="236.999992817641,70.6666639248531" />
+                  <mssgle:CubicBezierSegment
+                    Point1="236.999992817641,70.6666639248531"
+                    Point2="240.999992817641,70.6666639248531"
+                    Point3="240.999992817641,74.6666639248531" />
+                  <mssgle:LineSegment
+                    End="240.999992817641,133.833327849706" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\extraction vers staging products\Destination ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\extraction vers staging purchase">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\extraction vers staging purchase\Source du fichier plat"
+          TopLeft="101.999996960163,110.999996691942" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\extraction vers staging purchase\Destination ADO NET"
+          TopLeft="359.999989271164,282.999991565943" />
+        <EdgeLayout
+          Id="Package\extraction vers staging purchase.Paths[Sortie de source de fichier plat]"
+          TopLeft="191.999996960163,153.666663358609">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="257.999992311001,129.333328207334"
+              Start="0,0"
+              End="257.999992311001,121.833328207334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.666664103667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60.666664103667"
+                    Point2="0,64.666664103667"
+                    Point3="4,64.666664103667" />
+                  <mssgle:LineSegment
+                    End="253.999992311001,64.666664103667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="253.999992311001,64.666664103667"
+                    Point2="257.999992311001,64.666664103667"
+                    Point3="257.999992311001,68.666664103667" />
+                  <mssgle:LineSegment
+                    End="257.999992311001,121.833328207334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\extraction vers staging purchase\Destination ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

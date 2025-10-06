@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\21276\\source\\repos\\ssas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|C:\\Users\\21276\\source\\repos\\ssas\\dw.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|solutionrelative:dw.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|C:\\Users\\21276\\source\\repos\\ssas\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|solutionrelative:Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|C:\\Users\\21276\\source\\repos\\ssas\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|solutionrelative:Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|C:\\Users\\21276\\source\\repos\\ssas\\Dim Product.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|solutionrelative:Dim Product.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|C:\\Users\\21276\\source\\repos\\ssas\\dw.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC76867-B371-43F2-9B66-8BE132D00615}|ssas.dwproj|solutionrelative:dw.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dim Date.dim [Conception]",
+              "DocumentMoniker": "C:\\Users\\21276\\source\\repos\\ssas\\Dim Date.dim",
+              "RelativeDocumentMoniker": "Dim Date.dim",
+              "ToolTip": "C:\\Users\\21276\\source\\repos\\ssas\\Dim Date.dim [Conception]",
+              "RelativeToolTip": "Dim Date.dim [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-08T16:15:16.652Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dw.cube [Conception]",
+              "DocumentMoniker": "C:\\Users\\21276\\source\\repos\\ssas\\dw.cube",
+              "RelativeDocumentMoniker": "dw.cube",
+              "ToolTip": "C:\\Users\\21276\\source\\repos\\ssas\\dw.cube [Conception]",
+              "RelativeToolTip": "dw.cube [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-08T16:10:05.312Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Customer.dim [Conception]",
+              "DocumentMoniker": "C:\\Users\\21276\\source\\repos\\ssas\\Dim Customer.dim",
+              "RelativeDocumentMoniker": "Dim Customer.dim",
+              "ToolTip": "C:\\Users\\21276\\source\\repos\\ssas\\Dim Customer.dim [Conception]",
+              "RelativeToolTip": "Dim Customer.dim [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-08T16:11:34.015Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Product.dim [Conception]",
+              "DocumentMoniker": "C:\\Users\\21276\\source\\repos\\ssas\\Dim Product.dim",
+              "RelativeDocumentMoniker": "Dim Product.dim",
+              "ToolTip": "C:\\Users\\21276\\source\\repos\\ssas\\Dim Product.dim [Conception]",
+              "RelativeToolTip": "Dim Product.dim [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-08T16:22:35.029Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dw.dsv [Conception]",
+              "DocumentMoniker": "C:\\Users\\21276\\source\\repos\\ssas\\dw.dsv",
+              "RelativeDocumentMoniker": "dw.dsv",
+              "ToolTip": "C:\\Users\\21276\\source\\repos\\ssas\\dw.dsv [Conception]",
+              "RelativeToolTip": "dw.dsv [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-08T16:04:20.679Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
