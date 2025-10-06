@@ -145,15 +145,6 @@ The product and sales dashboard provides visibility into key financial metrics, 
 <img src="images/dash2.png" alt="Product and Sales Performance Dashboard" width="600"/>
 <p style="text-align:center"><em>Figure 13: Product and Sales Performance Dashboard</em></p>
 
-
-
-
-## Conclusion
-This project demonstrates how Business Intelligence transforms raw data into strategic value.  
-By combining ETL pipelines, OLAP modeling, dashboards, and machine learning, we built a scalable and complete decision-support system.
-
-> "Data becomes powerful only when it leads to action."
-
 ---
 
 ## Read More & Feedback
