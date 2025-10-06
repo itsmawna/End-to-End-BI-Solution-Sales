@@ -142,7 +142,7 @@ The dashboard provides a segmented view of customer behavior, highlighting key p
 
 The product and sales dashboard provides visibility into key financial metrics, visualizing revenue, profit, and growth trends. It identifies leading categories and regions to help managers track performance against objectives.
 
-<img src="images/dashb2.png" alt="Product and Sales Performance Dashboard" width="600"/>
+<img src="images/dash2.png" alt="Product and Sales Performance Dashboard" width="600"/>
 <p style="text-align:center"><em>Figure 13: Product and Sales Performance Dashboard</em></p>
 
 
